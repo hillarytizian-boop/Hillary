@@ -1,0 +1,139 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tizian Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles can be added here */
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center">
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold">Tizian Tech</h1>
+            <h2 class="text-2xl my-4">Your Technology Partner</h2>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">About Us</h3>
+            <p class="text-lg">Introducing Tizian Tech, a leading tech company dedicated to fulfilling customer's dreams.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-10 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Key Features</h3>
+            <p class="text-lg">Explore our cutting-edge features that set us apart from the competition.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Pricing Options</h3>
+            <p class="text-lg">Choose a package that suits your needs and budget.</p>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-10 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Customer Pain Point</h3>
+            <p class="text-lg">Discover how we solve your biggest challenges effortlessly.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Our Solution</h3>
+            <p class="text-lg">Explore how our innovative solution can transform your business.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-10 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Customer Testimonials</h3>
+            <p class="text-lg">See what our satisfied customers have to say about us.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Meet Our Team</h3>
+            <p class="text-lg">Get to know the talented individuals behind our success.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-10 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+            <form class="w-full max-w-lg mx-auto">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <input type="text" placeholder="Name" class="w-1/2 px-3 py-2 mb-3">
+                    <input type="email" placeholder="Email" class="w-1/2 px-3 py-2 mb-3">
+                    <textarea placeholder="Message" class="w-full px-3 py-2 mb-3"></textarea>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">FAQ</h3>
+            <div class="accordion">
+                <button class="accordion-btn">Question 1</button>
+                <div class="accordion-content hidden">Answer 1</div>
+                <button class="accordion-btn">Question 2</button>
+                <div class="accordion-content hidden">Answer 2</div>
+                <button class="accordion-btn">Question 3</button>
+                <div class="accordion-content hidden">Answer 3</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>&copy; 2022 Tizian Tech. All Rights Reserved.</div>
+            <div>
+                <a href="#"><i class="fab fa-facebook fa-2x mx-2"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionBtns = document.querySelectorAll('.accordion-btn');
+            accordionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    content.classList.toggle('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+```
